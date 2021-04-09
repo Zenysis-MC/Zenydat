@@ -1,3 +1,5 @@
+execute as @a[scores={starz=..6},tag=!op,tag=!special,team=!408] run team join 408
+
 execute as @a[scores={starz=6..44},tag=!op,tag=!special,team=!407] run tellraw @a [{"selector":"@s"}," \u00a7bjust ranked up to Peasant!"]
 execute as @a[scores={starz=6..44},tag=!op,tag=!special,team=!407] run team join 407
 
