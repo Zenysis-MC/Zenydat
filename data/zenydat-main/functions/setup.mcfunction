@@ -8,7 +8,11 @@ scoreboard objectives add RTPs dummy
 scoreboard objectives add xHome1 dummy
 scoreboard objectives add yHome1 dummy
 scoreboard objectives add zHome1 dummy
+scoreboard objectives add xHome2 dummy
+scoreboard objectives add yHome2 dummy
+scoreboard objectives add zHome2 dummy
 scoreboard objectives add dim1 dummy
+scoreboard objectives add dim2 dummy
 scoreboard objectives add home trigger
 scoreboard objectives add sethome trigger
 
