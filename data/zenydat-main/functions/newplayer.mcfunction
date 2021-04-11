@@ -1,6 +1,8 @@
 execute as @s run function zenydat-main:spawn
 scoreboard players set @s RTPs 3
 scoreboard players set @s votes 0
+scoreboard players set @s playtime 0
+scoreboard players set @s hour 0
 tag @s add joined
 
 scoreboard players add players database 1

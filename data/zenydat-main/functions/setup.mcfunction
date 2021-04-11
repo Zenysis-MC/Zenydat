@@ -16,6 +16,8 @@ scoreboard objectives add dim2 dummy
 scoreboard objectives add home trigger
 scoreboard objectives add sethome trigger
 
+scoreboard objectives add playtime dummy
+scoreboard objectives add hour dummy
 scoreboard objectives add votes dummy
 scoreboard objectives add starz dummy
 scoreboard objectives add id dummy
@@ -23,5 +25,6 @@ scoreboard objectives add database dummy
 execute unless score players database matches 1.. run scoreboard players set players database 0
 
 function zenydat-main:loop
+function zenydat-main:minute
 
 tellraw @s "\u00a7aAll set up! Enjoy!"
