@@ -24,7 +24,7 @@ scoreboard objectives add id dummy
 scoreboard objectives add database dummy
 execute unless score players database matches 1.. run scoreboard players set players database 0
 
-function zenydat-main:loop
-function zenydat-main:minute
+#function zenydat-main:loop
+#function zenydat-main:minute
 
 tellraw @s "\u00a7aAll set up! Enjoy!"

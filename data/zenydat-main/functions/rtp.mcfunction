@@ -1,5 +1,7 @@
 tag @s[scores={RTPs=..0}] add rtpF
 tag @s[scores={RTPs=1..}] add rtpT
+execute if entity @s[nbt={Dimension:"minecraft:the_end"}] run tag @s remove rtpT
+execute if entity @s[nbt={Dimension:"minecraft:the_end"}] run tellraw @s "\u00a7cRTPing is prohibited in the End! Sorry!"
 
 execute if entity @s[tag=rtpF] run tellraw @s "\u00a7cSorry, but you have no RTPs!"
 execute if entity @s[tag=rtpT] run tellraw @s "\u00a7bTeleporting..."
