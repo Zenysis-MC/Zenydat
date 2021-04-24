@@ -1,6 +1,12 @@
-This is the official working datapack for the Zenysis Minecraft server.
+# Zenydat
+### *The Official Datapack of the Zenyis Minecraft Vanilla Server*
 
-Written by:
-   -catter1
+This datapack contains many features, including **homes** (going and setting), a rank-up system, tpa system (all hidden behind a chat menu (WIP)), and more!
 
-WIP!
+Feel free to take a look around, and use it for inspiration (or to make fun of my code).
+
+
+## Credits
+Homes - Inspiration taken from Plasmere and Tyrthurey
+
+TPA - Inspiration taken from Pandamium
