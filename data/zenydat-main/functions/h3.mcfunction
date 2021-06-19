@@ -6,7 +6,7 @@ execute store result entity @s Pos[1] double 1 run scoreboard players get @p[sco
 execute store result entity @s Pos[2] double 1 run scoreboard players get @p[scores={home=3}] zHome3
 execute at @s run teleport @s ~0.5 ~0.4 ~0.5
 
-execute at @e[type=minecraft:armor_stand,limit=1,sort=nearest,tag=homer2] if entity @a[scores={home=2},limit=1,sort=nearest] run teleport @a[scores={home=3},limit=1,sort=nearest] @s
+execute at @e[type=minecraft:armor_stand,limit=1,sort=nearest,tag=homer2] if entity @a[scores={home=3},limit=1,sort=nearest] run teleport @a[scores={home=3},limit=1,sort=nearest] @s
 kill @e[type=minecraft:armor_stand,limit=1,sort=nearest,tag=homer2]
 kill @s
 scoreboard players set @p[scores={home=3}] home 0
