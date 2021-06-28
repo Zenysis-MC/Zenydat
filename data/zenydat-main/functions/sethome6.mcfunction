@@ -1,4 +1,4 @@
-execute if entity @s[scores={starz=2775..}] run tag @s add ishoming
+execute if entity @s[tag=home6.can] run tag @s add ishoming
 execute if entity @s[tag=!ishoming] run tellraw @s "\u00a7cYou must be at least a Custom rank to use a sixth home!"
 
 execute if entity @s[tag=ishoming] as @s store result score @s xHome6 run data get entity @s Pos[0] 1
