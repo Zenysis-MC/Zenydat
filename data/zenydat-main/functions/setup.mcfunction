@@ -31,6 +31,7 @@ scoreboard objectives add dim5 dummy
 scoreboard objectives add dim6 dummy
 scoreboard objectives add home trigger
 scoreboard objectives add sethome trigger
+scoreboard objectives add vote trigger
 
 scoreboard objectives add playtime dummy
 scoreboard objectives add hour dummy
