@@ -47,3 +47,4 @@ function zenydat-main:minute
 function zenydat-main:advert
 
 tellraw @s "\u00a7aAll set up! Enjoy!"
+tellraw @a[tag=op] [{"text":"[","color":"gray","italic":"true"},{"selector":"@s","italic":"true"},{"text":" did some magicks with setting up da server.]","color":"gray","italic":"true"}]

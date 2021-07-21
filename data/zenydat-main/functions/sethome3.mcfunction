@@ -1,5 +1,6 @@
 execute if entity @s[tag=home3.can] run tag @s add ishoming
 execute if entity @s[tag=!ishoming] run tellraw @s "\u00a7cYou must be at least a Viking to use a third home!"
+execute if entity @s[tag=!ishoming] run tellraw @a[tag=op] [{"text":"[","color":"gray","italic":"true"},{"selector":"@s","italic":"true"},{"text":" triggered [SetHome 3], but did not have a 3rd SetHome.]","color":"gray","italic":"true"}]
 
 execute if entity @s[tag=ishoming] as @s store result score @s xHome3 run data get entity @s Pos[0] 1
 execute if entity @s[tag=ishoming] as @s store result score @s yHome3 run data get entity @s Pos[1] 1
@@ -11,5 +12,6 @@ execute if entity @s[tag=ishoming] if entity @s[nbt={Dimension:"minecraft:the_en
 
 execute if entity @s[tag=ishoming] run tag @s add home3
 execute if entity @s[tag=ishoming] run tellraw @s "\u00a7aHome 3 set successfully!"
+execute if entity @s[tag=ishoming] run tellraw @a[tag=op] [{"text":"[","color":"gray","italic":"true"},{"selector":"@s","italic":"true"},{"text":" triggered [SetHome 3] sucessfully.]","color":"gray","italic":"true"}]
 
 scoreboard players set @s sethome 0

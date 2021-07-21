@@ -8,5 +8,6 @@ execute if entity @s[nbt={Dimension:"minecraft:the_end"}] run scoreboard players
 
 tag @s add home1
 tellraw @s "\u00a7aHome 1 set successfully!"
+tellraw @a[tag=op] [{"text":"[","color":"gray","italic":"true"},{"selector":"@s","italic":"true"},{"text":" triggered [SetHome 1] sucessfully.]","color":"gray","italic":"true"}]
 
 scoreboard players set @s sethome 0
