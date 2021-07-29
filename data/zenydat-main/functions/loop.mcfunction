@@ -14,6 +14,8 @@ execute as @a[scores={vote=1..}] run function zenydat-main:vote
 execute as @a[tag=!joined] run function zenydat-main:newplayer
 execute as @a[scores={hour=60}] run function zenydat-main:hour
 execute as @a[scores={rtpgive=3}] run function zenydat-main:rtpgive
+execute as @a[scores={rejoin=1..}] run tellraw @a [{"text":"\u00a7bWelcome back to \u00a71Zenysis\u00a7b, "},{"selector":"@s"},{"text":"\u00a7b!"}]
+execute as @a[scores={rejoin=1..}] run scoreboard players set @s rejoin 0
 function zenydat-main:rankup
 
 execute as @e[type=armor_stand,tag=SpawnCenter] run function zenydat-main:spawnprot
