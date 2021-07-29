@@ -1,0 +1,18 @@
+{
+    "type":"crafting_shaped",
+    "pattern": [" A ",
+        "ABA",
+        " B "
+        ],
+    "key": {
+        "A": {
+            "item": "minecraft:azalea"
+            },
+        "B": {
+            "item": "minecraft:bamboo"
+            }
+        },
+    "result": {
+        "item": "minecraft:small_dripleaf"
+        }
+    }
