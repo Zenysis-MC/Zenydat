@@ -1,0 +1,18 @@
+{
+    "type":"crafting_shaped",
+    "pattern": ["EEE",
+        "EME",
+        "EEE"
+        ],
+    "key": {
+        "E": {
+            "item": "minecraft:egg"
+            },
+        "M": {
+            "item": "minecraft:mud"
+            }
+        },
+    "result": {
+        "item": "minecraft:frog_spawn"
+        }
+    }

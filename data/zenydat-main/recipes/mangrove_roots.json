@@ -1,0 +1,18 @@
+{
+    "type":"crafting_shaped",
+    "pattern": ["SSS",
+        "SRS",
+        "SSS"
+        ],
+    "key": {
+        "R": {
+            "item": "minecraft:hanging_roots"
+            },
+        "S": {
+            "item": "minecraft:stick"
+            }
+        },
+    "result": {
+        "item": "minecraft:mangrove_roots"
+        }
+    }

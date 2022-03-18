@@ -1,2 +1,0 @@
-#execute as @a run tellraw catter1 {"selector":"@s","clickEvent":{"action":"run_command","value":"/trigger tpa set {"score":{"name":"@s","objective":"id"}"}}
-#trigger tpa set {"score":{"name":"@s","objective":"id"}"}

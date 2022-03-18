@@ -32,6 +32,7 @@ scoreboard objectives add dim6 dummy
 scoreboard objectives add home trigger
 scoreboard objectives add sethome trigger
 scoreboard objectives add vote trigger
+scoreboard objectives add balance trigger
 scoreboard objectives add rejoin minecraft.custom:minecraft.leave_game
 
 scoreboard objectives add playtime dummy
@@ -43,9 +44,9 @@ scoreboard objectives add id dummy
 scoreboard objectives add database dummy
 execute unless score players database matches 1.. run scoreboard players set players database 0
 
-function zenydat-main:loop
-function zenydat-main:minute
-function zenydat-main:advert
+function zeny:loop
+function zeny:minute
+function zeny:advert
 
 tellraw @s "\u00a7aAll set up! Enjoy!"
 tellraw @a[tag=op] [{"text":"[","color":"gray","italic":"true"},{"selector":"@s","italic":"true"},{"text":" did some magicks with setting up da server.]","color":"gray","italic":"true"}]
