@@ -8,5 +8,3 @@ Feel free to take a look around, and use it for inspiration (or to make fun of m
 
 ## Credits
 Homes - Inspiration taken from Plasmere and Tyrthurey
-
-TPA - Inspiration taken from Pandamium
