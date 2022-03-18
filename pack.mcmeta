@@ -1,6 +1,6 @@
 {
 	"pack": {
-		"pack_format": 7,
-		"description": "Essential datapack for function of Zenysis Vanilla server."
+		"pack_format": 10,
+		"description": "Core datapack for Zenysis Snapshot server."
 	}
 }
