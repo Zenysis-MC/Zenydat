@@ -4,6 +4,8 @@ scoreboard players enable @a home
 scoreboard players enable @a sethome
 scoreboard players enable @a rtp
 scoreboard players enable @a vote
+scoreboard players enable @a balance
+scoreboard players enable @a bal
 
 execute as @a[scores={home=1..}] run function zeny:home
 execute as @a[scores={sethome=1..}] run function zeny:sethome
@@ -11,6 +13,10 @@ execute as @a[scores={spawn=1..}] run function zeny:spawn
 execute as @a[scores={suicide=1..}] run function zeny:suicide
 execute as @a[scores={rtp=1..}] run function zeny:rtp
 execute as @a[scores={vote=1..}] run function zeny:vote
+execute as @a[scores={balance=1..}] run function zeny:stats
+execute as @a[scores={bal=1..}] run function zeny:stats
+execute as @a[scores={stats=1..}] run function zeny:stats
+execute as @a[scores={profile=1..}] run function zeny:stats
 execute as @a[tag=!joined] run function zeny:newplayer
 execute as @a[scores={hour=60}] run function zeny:hour
 execute as @a[scores={rtpgive=4}] run function zeny:rtpgive
