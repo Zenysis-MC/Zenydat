@@ -6,6 +6,8 @@ scoreboard players enable @a rtp
 scoreboard players enable @a vote
 scoreboard players enable @a balance
 scoreboard players enable @a bal
+scoreboard players enable @a stats
+scoreboard players enable @a profile
 
 execute as @a[scores={home=1..}] run function zeny:home
 execute as @a[scores={sethome=1..}] run function zeny:sethome

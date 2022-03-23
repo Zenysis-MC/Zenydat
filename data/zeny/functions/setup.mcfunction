@@ -43,6 +43,7 @@ scoreboard objectives add hour dummy
 scoreboard objectives add votes dummy
 scoreboard objectives add starz dummy
 scoreboard objectives add rtpgive dummy
+scoreboard objectives add homecount dummy
 scoreboard objectives add RTPs dummy
 scoreboard objectives add id dummy
 scoreboard objectives add database dummy
