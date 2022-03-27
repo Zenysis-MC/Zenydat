@@ -46,6 +46,7 @@ scoreboard objectives add rtpgive dummy
 scoreboard objectives add homecount dummy
 scoreboard objectives add RTPs dummy
 scoreboard objectives add id dummy
+scoreboard objectives add id_diff dummy
 scoreboard objectives add database dummy
 execute unless score players database matches 1.. run scoreboard players set players database 0
 scoreboard objectives add c60 dummy
