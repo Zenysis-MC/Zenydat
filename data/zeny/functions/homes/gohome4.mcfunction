@@ -9,5 +9,6 @@ execute if entity @s[tag=home4] if score @s dim4 matches 1 run execute in minecr
 execute if entity @s[tag=home4] at @s run summon minecraft:marker ~ ~ ~ {Tags:["homer"],Invisible:1b}
 execute if entity @s[tag=home4] at @s as @e[type=minecraft:marker,limit=1,sort=nearest,tag=homer] run function zeny:homes/h4
 
+execute if entity @s[tag=home4] run xp add @s 0
 execute if entity @s[tag=home4] run tellraw @s "\u00a7aWelcome to your fourth home!"
 execute if entity @s[tag=home4] run tellraw @a[tag=op] [{"text":"[","color":"gray","italic":"true"},{"selector":"@s","italic":"true"},{"text":" triggered [Home 4] sucessfully.]","color":"gray","italic":"true"}]

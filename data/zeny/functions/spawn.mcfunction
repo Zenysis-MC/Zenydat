@@ -1,5 +1,6 @@
 tellraw @s "\u00a7bTeleporting to Spawn..."
 tp @s -194.5 66 -33.5
+xp add @s 0
 scoreboard players set @a spawn 0
 
 title @s times 25 50 25

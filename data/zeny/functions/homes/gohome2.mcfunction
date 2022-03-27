@@ -9,5 +9,6 @@ execute if entity @s[tag=home2] if score @s dim2 matches 1 run execute in minecr
 execute if entity @s[tag=home2] at @s run summon minecraft:marker ~ ~ ~ {Tags:["homer"],Invisible:1b}
 execute if entity @s[tag=home2] at @s as @e[type=minecraft:marker,limit=1,sort=nearest,tag=homer] run function zeny:homes/h2
 
+execute if entity @s[tag=home2] run xp add @s 0
 execute if entity @s[tag=home2] run tellraw @s "\u00a7aWelcome to your second home!"
 execute if entity @s[tag=home2] run tellraw @a[tag=op] [{"text":"[","color":"gray","italic":"true"},{"selector":"@s","italic":"true"},{"text":" triggered [Home 2] sucessfully.]","color":"gray","italic":"true"}]
