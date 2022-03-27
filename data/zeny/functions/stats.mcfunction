@@ -15,12 +15,13 @@ execute if entity @s[tag=home9.can] run scoreboard players add @s homecount 1
 execute if entity @s[tag=home10.can] run scoreboard players add @s homecount 1
 
 #Display basic profile info {"score":{"name":"@s","objective":"starz"},"color":"blue"}
-tellraw @s [{"text":"--- ","color":"blue"},{"selector":"@s"},{"text":"'s Profile/Stats","color":"aqua"},{"text":" ---","color":"blue"}]
+tellraw @s [{"text":"----- ","color":"blue"},{"selector":"@s"},{"text":"'s Profile/Stats","color":"aqua"},{"text":" -----","color":"blue"}]
 tellraw @s [{"text":"   ID: ","color":"aqua"},{"score":{"name":"@s","objective":"id"},"color":"blue"}]
 tellraw @s [{"text":"   Votes: ","color":"aqua"},{"score":{"name":"@s","objective":"votes"},"color":"blue"}]
 tellraw @s [{"text":"   Balance: ","color":"aqua"},{"score":{"name":"@s","objective":"starz"},"color":"blue"},{"text":" Starz","color":"aqua"}]
 tellraw @s [{"text":"   Playtime: ","color":"aqua"},{"score":{"name":"@s","objective":"playtime"},"color":"blue"},{"text":" minutes (","color":"aqua"},{"score":{"name":"#playtime","objective":"playtime"},"color":"blue"},{"text":" hours)","color":"aqua"}]
 tellraw @s [{"text":"   Deaths: ","color":"aqua"},{"score":{"name":"@s","objective":"deaths"},"color":"blue"}]
+tellraw @s [{"text":"   RTPs: ","color":"aqua"},{"score":{"name":"@s","objective":"RTPs"},"color":"blue"}]
 tellraw @s [{"text":"   Homes: ","color":"aqua"},{"score":{"name":"@s","objective":"homecount"},"color":"blue"},{"text":" unlocked","color":"aqua"}]
 
 #Display user's next rank
@@ -41,7 +42,7 @@ execute if entity @s[tag=!home4.can,scores={votes=15..114}] run tellraw @s [{"te
 execute if entity @s[tag=!home5.can,scores={votes=115..369}] run tellraw @s [{"text":"   Next Home Unlock: ","color":"aqua"},{"text":"5th","color":"blue"},{"text":" home (","color":"aqua"},{"text":"370","color":"blue"},{"text":" votes)","color":"aqua"}]
 execute if entity @s[tag=!home6.can,scores={votes=370..699}] run tellraw @s [{"text":"   Next Home Unlock: ","color":"aqua"},{"text":"6th","color":"blue"},{"text":" home (","color":"aqua"},{"text":"700","color":"blue"},{"text":" votes)","color":"aqua"}]
 
-tellraw @s [{"text":"-------------------------------------------","color":"blue"}]
+tellraw @s [{"text":"----------------------------------------","color":"blue"}]
 
 #Reset scoreboards/aliases
 scoreboard players set @s balance 0
