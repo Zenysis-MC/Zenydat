@@ -34,6 +34,7 @@ scoreboard objectives add dim4 dummy
 scoreboard objectives add dim5 dummy
 scoreboard objectives add dim6 dummy
 scoreboard objectives add home trigger
+scoreboard objectives add homes trigger
 scoreboard objectives add sethome trigger
 scoreboard objectives add rejoin minecraft.custom:minecraft.leave_game
 scoreboard objectives add deaths deathCount

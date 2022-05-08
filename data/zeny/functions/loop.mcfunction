@@ -1,6 +1,7 @@
 scoreboard players enable @a suicide
 scoreboard players enable @a spawn
 scoreboard players enable @a home
+scoreboard players enable @a homes
 scoreboard players enable @a sethome
 scoreboard players enable @a rtp
 scoreboard players enable @a vote
@@ -10,6 +11,7 @@ scoreboard players enable @a stats
 scoreboard players enable @a profile
 
 execute as @a[scores={home=1..}] run function zeny:home
+execute as @a[scores={homes=1..}] run function zeny:homes
 execute as @a[scores={sethome=1..}] run function zeny:sethome
 execute as @a[scores={spawn=1..}] run function zeny:spawn
 execute as @a[scores={suicide=1..}] run function zeny:suicide
