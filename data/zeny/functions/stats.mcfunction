@@ -33,7 +33,8 @@ execute if entity @s[team=404] run tellraw @s [{"text":"   Next Rank: ","color":
 execute if entity @s[team=403] run tellraw @s [{"text":"   Next Rank: ","color":"aqua"},{"text":"Inventor","color":"#EBCE10"},{"text":" (","color":"aqua"},{"text":"370","color":"blue"},{"text":" votes)"}]
 execute if entity @s[team=402] run tellraw @s [{"text":"   Next Rank: ","color":"aqua"},{"text":"Astronaut","color":"#032C9E"},{"text":" (","color":"aqua"},{"text":"525","color":"blue"},{"text":" votes)"}]
 execute if entity @s[team=401] run tellraw @s [{"text":"   Next Rank: ","color":"aqua"},{"text":"Martian","color":"#A81919"},{"text":" (","color":"aqua"},{"text":"700","color":"blue"},{"text":" votes)"}]
-execute if entity @s[team=400] run tellraw @s [{"text":"   Next Rank: ","color":"aqua"},{"text":"CUSTOM","color":"red"},{"text":" (","color":"aqua"},{"text":"925","color":"blue"},{"text":" votes)"}]
+execute if entity @s[team=400,scores={votes=..925}] run tellraw @s [{"text":"   Next Rank: ","color":"aqua"},{"text":"Custom","color":"red"},{"text":" (","color":"aqua"},{"text":"925","color":"blue"},{"text":" votes)"}]
+execute if entity @s[scores={votes=925..}] run tellraw @s [{"text":"   Next Rank: ","color":"aqua"},{"text":"PERMANENT Custom","color":"dark_red"},{"text":" (","color":"aqua"},{"text":"1500","color":"blue"},{"text":" votes)"}]
 
 #Display the next home unlocked
 execute if entity @s[tag=!home2.can,scores={votes=..1}] run tellraw @s [{"text":"   Next Home Unlock: ","color":"aqua"},{"text":"2nd","color":"blue"},{"text":" home (","color":"aqua"},{"text":"2","color":"blue"},{"text":" votes)","color":"aqua"}]
