@@ -24,7 +24,7 @@ execute as @a[scores={profile=1..}] run function zeny:stats
 execute as @a[tag=!joined] run function zeny:newplayer
 execute as @a[scores={hour=60}] run function zeny:hour
 execute as @a[scores={rtpgive=2..}] run function zeny:rtpgive
-execute as @a[scores={rejoin=1..}] run tellraw @a [{"text":"\u00a7bWelcome back to \u00a71Zenysis\u00a7b, "},{"selector":"@s"},{"text":"\u00a7b!"}]
+execute as @a[scores={rejoin=1..}] run tellraw @a [{"text":"\u00a7eWelcome back to Zenysis, "},{"selector":"@s"},{"text":"\u00a7e!"}]
 execute as @a[scores={rejoin=1..}] run scoreboard players set @s rejoin 0
 function zeny:rankup
 
